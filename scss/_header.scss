@@ -1,0 +1,11 @@
+.header {
+  font-family: $fuente;
+  background-color: $primario;
+  img {
+    width: 60*2px;
+    &:hover {
+      transition: 1s;
+      transform: rotate(1turn);
+    }
+  }
+}

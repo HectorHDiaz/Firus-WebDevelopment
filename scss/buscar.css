@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.header {
+  font-family: "Montserrat", sans-serif;
+  background-color: #bf3d4a;
+}
+.header img {
+  width: 120px;
+}
+.header img:hover {
+  transition: 1s;
+  transform: rotate(1turn);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+  color: #565652;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  color: #565652;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+.container__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: #bf3d4a;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.container__title h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cuadroPrincipal p,
+ul {
+  font-size: 10px;
+}
+
+.cuadrosInfo {
+  margin: 2rem 0;
+}
+
+.carousel img {
+  border-radius: 0.2rem;
+}
+
+.container__titulosPrincipales {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #bf3d4a;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.container__iconos {
+  padding-bottom: 1rem;
+}
+
+.container__iconos a,
+.footer__iconos a {
+  margin: 0.7rem;
+}
+.container__iconos a img,
+.footer__iconos a img {
+  width: 3rem;
+}
+
+@media all and (min-width: 768px) {
+  .cuadroPrincipal p,
+ul {
+    font-size: 14px;
+  }
+  .container__title h1 {
+    font-size: 2rem;
+  }
+  .container__titulosPrincipales {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #bf3d4a;
+    font-size: 1.5rem;
+  }
+  .container__iconos a {
+    margin: 1rem;
+  }
+  .container__iconos a img {
+    width: 4rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .container__title h1 {
+    font-size: 2.5rem;
+  }
+  .container__iconos {
+    display: none;
+  }
+  .cuadroPrincipal p,
+ul {
+    font-size: 18px;
+  }
+}
+/*Footer*/
+.footer {
+  background-color: #bf3d4a;
+  color: #fafafa;
+  width: 100%;
+}
+.footer .footer__title {
+  color: #fafafa;
+}
+.footer .footer__title:hover {
+  transition: 0.5s;
+  transform: scale(1.5);
+  color: white;
+}
+.footer .footer__iconos {
+  display: none;
+}
+.footer .footer__iconos a:hover {
+  transition: 0.5s;
+  transform: scale(1.15);
+}
+.footer ul {
+  display: none;
+}
+
+@media all and (min-width: 992px) {
+  .footer .footer__iconos {
+    display: flex;
+  }
+  .footer img {
+    width: 50px;
+  }
+  .footer ul {
+    display: flex;
+  }
+}
+/*Button*/
+.btn {
+  font-family: "Montserrat", sans-serif;
+  color: #fafafa;
+  background-color: #bf3d4a;
+  outline: none;
+  border-style: none;
+}
+.btn:hover {
+  background-color: orange;
+  border-color: #ff8080;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 128, 128, 0.3137254902);
+}
+.btn:focus {
+  border-color: #ff8080;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 128, 128, 0.3137254902);
+}
+
+.cuadroPrincipal {
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+  min-height: 30vh;
+  margin: 20px 10px;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  color: #574949;
+  background-color: #fff;
+  border-color: #ff8080;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 128, 128, 0.3137254902);
+}
+
+/*Busqueda.html - Cuadro Mapa*/
+.cuadroBusqueda {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Lado Texto*/
+.cuadroBusqueda__filtrosMapa {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.filtrosForm {
+  display: flex;
+  flex-direction: column;
+}
+.filtrosForm input {
+  width: 60%;
+  display: flex;
+  font-size: 0.7rem;
+  padding: 10px;
+  margin: 1rem auto;
+}
+
+.filtroSelect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+.select select {
+  margin: 0.7rem;
+  padding: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.filtrosForm a {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+/*Lado Mapa*/
+.cuadroBusqueda__claseMapa {
+  margin-top: 1rem;
+  height: 50vh;
+}
+.cuadroBusqueda__claseMapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*Resultados*/
+.cardHead {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.459);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3em 1em;
+}
+
+.cardHead__title h5 {
+  margin: 0;
+}
+
+/*Badges*/
+.cardHead__badge {
+  font-size: 100%;
+}
+
+/*Operaciones SASS*/
+.card1 {
+  background-image: url("../media/adopciones/perro1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card1:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card2 {
+  background-image: url("../media/adopciones/perro2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card2:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card3 {
+  background-image: url("../media/adopciones/perro3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card3:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card4 {
+  background-image: url("../media/adopciones/perro4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card4:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card5 {
+  background-image: url("../media/adopciones/perro5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card5:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card6 {
+  background-image: url("../media/adopciones/perro6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card6:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card7 {
+  background-image: url("../media/adopciones/perro7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card7:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card8 {
+  background-image: url("../media/adopciones/perro8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card8:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card9 {
+  background-image: url("../media/adopciones/perro9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.card9:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+  box-shadow: 2px 15px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media all and (min-width: 992px) {
+  .cuadroBusqueda {
+    flex-direction: row;
+  }
+  .cuadroBusqueda__claseMapa {
+    width: 80%;
+  }
+}/*# sourceMappingURL=buscar.css.map */
